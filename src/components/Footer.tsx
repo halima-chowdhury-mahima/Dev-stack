@@ -22,8 +22,8 @@ const Footer = () => {
             </a>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-slate-500">
-              Explore modern development technologies and build the ideal
-              stack for your next web project.
+              Curated tools, technologies, and resources for developers building
+               modern software.  
             </p>
 
             <div className="mt-5 flex gap-4 text-sm">
@@ -67,21 +67,21 @@ const Footer = () => {
                 href="#technologies"
                 className="transition hover:text-pink-500"
               >
-                Technologies
+                Home
               </a>
 
               <a
                 href="#projects"
                 className="transition hover:text-pink-500"
               >
-                Projects
+                Technologies
               </a>
 
               <a
                 href="#home"
                 className="transition hover:text-pink-500"
               >
-                Features
+                Projects
               </a>
             </div>
           </div>
@@ -135,13 +135,6 @@ const Footer = () => {
                 className="transition hover:text-pink-500"
               >
                 Terms of Service
-              </a>
-
-              <a
-                href="#cookies"
-                className="transition hover:text-pink-500"
-              >
-                Cookie Policy
               </a>
             </div>
           </div>
