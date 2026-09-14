@@ -1,8 +1,38 @@
 @import "tailwindcss";
+
+/* Shared Brand Gradient */
+:root {
+  --brand-gradient: linear-gradient(
+    90deg,
+    #f97316,
+    #ec4899,
+    #8b5cf6
+  );
+}
+
+/* Gradient Text */
 .gradient-text {
-  background: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+  display: inline-block;
+  background: var(--brand-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+/* Gradient Background */
+.gradient-bg {
+  background: var(--brand-gradient);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Body */
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #0f172a;
 }

@@ -28,8 +28,8 @@ const Footer = () => {
             </a>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-slate-500">
-              Explore modern development technologies and build the ideal
-              stack for your next web project.
+              Curated tools, technologies, and resources for developers
+              building modern software.
             </p>
 
             {/* Social Links */}
