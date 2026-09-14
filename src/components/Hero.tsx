@@ -3,51 +3,120 @@ import heroImage from "../assets/banner-stack.png";
 const Hero = () => {
   return (
     <section id="home" className="bg-white">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2 lg:py-24">
+      <div
+        className="
+          mx-auto grid max-w-7xl
+          grid-cols-1 items-center
+          gap-10 px-5 py-14
+          md:grid-cols-2 md:gap-12 md:py-20
+          lg:py-24
+        "
+      >
+        {/* =========================
+            HERO CONTENT
+        ========================== */}
+        <div className="text-center md:text-left">
 
-        {/* Left Side */}
-        <div>
-          <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          {/* Heading */}
+          <h1
+            className="
+              text-4xl font-extrabold
+              leading-[1.1] tracking-tight
+              text-slate-900
+              sm:text-5xl
+              lg:text-6xl
+            "
+          >
             Build Your Ideal
             <br />
 
-            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
+            <span className="gradient-text">
               Development Stack
             </span>
           </h1>
 
-          <p className="mt-5 max-w-xl text-base leading-7 text-slate-500">
-            Explore frontend, backend, database, and tooling options,
-            compare them side by side, and put together the stack that fits your
-            next project.
+          {/* Description */}
+          <p
+            className="
+              mx-auto mt-5
+              max-w-xl
+              text-base leading-7
+              text-slate-500
+              md:mx-0
+            "
+          >
+            Explore frontend, backend, database, and tooling options, compare
+            them side by side, and put together the stack that fits your next
+            project.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          {/* Buttons */}
+          <div
+            className="
+              mt-8 flex
+              items-center justify-center
+              gap-3
+              md:justify-start
+            "
+          >
+            {/* Explore Button */}
             <a
               href="#technologies"
-              className="rounded-md bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              className="
+                gradient-bg
+                flex min-h-[52px] flex-1
+                items-center justify-center
+                rounded-lg
+                px-4 py-3
+                text-center text-sm
+                font-semibold text-white
+                transition
+                hover:opacity-90
+                sm:flex-none sm:px-6
+              "
             >
               Explore Technologies
             </a>
 
+            {/* Learn More Button */}
             <a
               href="#technologies"
-              className="rounded-md border border-gray-300 px-6 py-3 text-sm font-medium text-slate-700 transition hover:border-pink-400 hover:text-pink-500"
+              className="
+                flex min-h-[52px] flex-1
+                items-center justify-center
+                rounded-lg
+                border border-gray-300
+                bg-white
+                px-4 py-3
+                text-center text-sm
+                font-medium text-slate-700
+                transition
+                hover:border-pink-400
+                hover:text-pink-500
+                sm:flex-none sm:px-8
+              "
             >
               Learn More
             </a>
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
+        {/* =========================
+            HERO IMAGE
+        ========================== */}
+        <div className="flex items-center justify-center md:justify-end">
           <img
             src={heroImage}
             alt="Development Stack Illustration"
-            className="w-full max-w-[420px] object-contain"
+            className="
+              w-full
+              max-w-[340px]
+              object-contain
+              sm:max-w-[400px]
+              md:max-w-[420px]
+            "
           />
         </div>
-
       </div>
     </section>
   );

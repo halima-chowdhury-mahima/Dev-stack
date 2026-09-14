@@ -8,11 +8,17 @@ const Footer = () => {
     >
       <div className="mx-auto max-w-7xl px-5 py-14">
 
-        {/* Main Footer Content */}
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-
-          {/* Brand Section */}
-          <div>
+        {/* Footer Main Content */}
+        <div
+          className="
+            grid gap-10
+            text-center
+            md:grid-cols-2 md:text-left
+            lg:grid-cols-4
+          "
+        >
+          {/* Brand */}
+          <div className="flex flex-col items-center md:items-start">
             <a href="#home" className="inline-block">
               <img
                 src={logo}
@@ -22,11 +28,12 @@ const Footer = () => {
             </a>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-slate-500">
-              Curated tools, technologies, and resources for developers building
-               modern software.  
+              Explore modern development technologies and build the ideal
+              stack for your next web project.
             </p>
 
-            <div className="mt-5 flex gap-4 text-sm">
+            {/* Social Links */}
+            <div className="mt-5 flex justify-center gap-4 text-sm md:justify-start">
               <a
                 href="https://github.com/"
                 target="_blank"
@@ -67,21 +74,21 @@ const Footer = () => {
                 href="#technologies"
                 className="transition hover:text-pink-500"
               >
-                Home
+                Technologies
               </a>
 
               <a
                 href="#projects"
                 className="transition hover:text-pink-500"
               >
-                Technologies
+                Projects
               </a>
 
               <a
                 href="#home"
                 className="transition hover:text-pink-500"
               >
-                Projects
+                Features
               </a>
             </div>
           </div>
@@ -136,19 +143,37 @@ const Footer = () => {
               >
                 Terms of Service
               </a>
+
+              <a
+                href="#cookies"
+                className="transition hover:text-pink-500"
+              >
+                Cookie Policy
+              </a>
             </div>
           </div>
-
         </div>
 
-        {/* Bottom Footer */}
-        <div className="mt-12 flex flex-col gap-4 border-t border-gray-200 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-
+        {/* Footer Bottom */}
+        <div
+          className="
+            mt-12 flex
+            flex-col items-center
+            gap-4
+            border-t border-gray-200
+            pt-6
+            text-center text-sm
+            text-slate-500
+            sm:flex-row
+            sm:justify-between
+            sm:text-left
+          "
+        >
           <p>
             © 2026 Dev Stack. All rights reserved.
           </p>
 
-          <div className="flex gap-5">
+          <div className="flex justify-center gap-5">
             <a
               href="#privacy"
               className="transition hover:text-pink-500"
@@ -163,8 +188,8 @@ const Footer = () => {
               Terms
             </a>
           </div>
-
         </div>
+
       </div>
     </footer>
   );
