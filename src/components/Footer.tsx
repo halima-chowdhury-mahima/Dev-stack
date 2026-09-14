@@ -6,19 +6,95 @@ const Footer = () => {
       id="contact"
       className="border-t border-gray-200 bg-white text-slate-900"
     >
-      <div className="mx-auto max-w-7xl px-5 py-14">
+      {/* =========================
+          MOBILE FOOTER
+          Only below md
+      ========================== */}
+      <div className="px-5 py-10 md:hidden">
 
-        {/* Footer Main Content */}
-        <div
-          className="
-            grid gap-10
-            text-center
-            md:grid-cols-2 md:text-left
-            lg:grid-cols-4
-          "
-        >
+        {/* Logo */}
+        <div className="flex justify-center">
+          <a href="#home">
+            <img
+              src={logo}
+              alt="Dev Stack Logo"
+              className="h-11 w-auto object-contain"
+            />
+          </a>
+        </div>
+
+        {/* Description */}
+        <p className="mx-auto mt-5 max-w-md text-center text-sm leading-6 text-slate-500">
+          Curated tools, technologies, and resources for developers building
+          modern software.
+        </p>
+
+        {/* Social Links */}
+        <div className="mt-6 flex items-center justify-center gap-4 text-sm text-slate-600">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="transition hover:text-pink-500"
+          >
+            GitHub
+          </a>
+
+          <span>•</span>
+
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="transition hover:text-pink-500"
+          >
+            Twitter
+          </a>
+
+          <span>•</span>
+
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="transition hover:text-pink-500"
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        {/* Bottom */}
+        <div className="mt-8 flex items-center justify-between border-t border-gray-200 pt-5 text-xs text-slate-400">
+          <p>© 2026 Dev Stack. All rights reserved.</p>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="#privacy"
+              className="transition hover:text-pink-500"
+            >
+              Privacy
+            </a>
+
+            <a
+              href="#terms"
+              className="transition hover:text-pink-500"
+            >
+              Terms
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* =========================
+          TABLET + DESKTOP FOOTER
+          md and above
+      ========================== */}
+      <div className="mx-auto hidden max-w-7xl px-5 py-14 md:block">
+
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
           {/* Brand */}
-          <div className="flex flex-col items-center md:items-start">
+          <div>
             <a href="#home" className="inline-block">
               <img
                 src={logo}
@@ -28,12 +104,11 @@ const Footer = () => {
             </a>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-slate-500">
-              Curated tools, technologies, and resources for developers
-              building modern software.
+              Explore modern development technologies and build the ideal stack
+              for your next web project.
             </p>
 
-            {/* Social Links */}
-            <div className="mt-5 flex justify-center gap-4 text-sm md:justify-start">
+            <div className="mt-5 flex gap-4 text-sm">
               <a
                 href="https://github.com/"
                 target="_blank"
@@ -152,28 +227,14 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
         </div>
 
-        {/* Footer Bottom */}
-        <div
-          className="
-            mt-12 flex
-            flex-col items-center
-            gap-4
-            border-t border-gray-200
-            pt-6
-            text-center text-sm
-            text-slate-500
-            sm:flex-row
-            sm:justify-between
-            sm:text-left
-          "
-        >
-          <p>
-            © 2026 Dev Stack. All rights reserved.
-          </p>
+        {/* Desktop Bottom */}
+        <div className="mt-12 flex items-center justify-between border-t border-gray-200 pt-6 text-sm text-slate-500">
+          <p>© 2026 Dev Stack. All rights reserved.</p>
 
-          <div className="flex justify-center gap-5">
+          <div className="flex gap-5">
             <a
               href="#privacy"
               className="transition hover:text-pink-500"
